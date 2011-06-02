@@ -1,0 +1,228 @@
+html {
+    font-size: 14px;
+}
+body {
+    background: url("images/header-center.jpg") repeat-x top left;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+em {
+    font-style: normal;
+    border-bottom: 2px dotted #ccc;
+}
+.pad {
+    padding: 2% 0;
+}
+.para {
+    line-height: 1.5em;
+}
+form {
+    padding: 2%;
+}
+td {
+    vertical-align: top;
+}
+
+#container {
+    margin: 0 auto;
+    overflow: auto;
+    width: 80%;
+    min-width: 850px;
+    max-width: 1200px;
+}
+#content {
+    overflow: auto;
+    margin-top: 200px;
+}
+#top_comment {
+    color: #a2a3a6;
+    margin: 6px 0;
+}
+#masthead {
+    width: 100%;
+    margin: 55px 0 0 0;
+    float: left;
+}
+#logo a {
+    color: white;
+    border: none;
+}
+#logo a:hover {
+    color: #cccccc;
+}
+h1 {
+        font-size: 45px;
+}
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 3px 0 20px 0;
+}
+#menu_wrap {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+}
+#menu {
+    font-size: 14px;
+    float: left;
+    list-style: none;
+    text-transform: capitalize;
+    /*background: url("images/navigation.png") repeat-x scroll 0 -41px transparent;  */
+}
+#menu li {
+    float: left;
+    position: relative;
+}
+a {
+    color: #44ab44;
+    text-decoration: none;
+    border-bottom: 1px dotted #44ab44;
+}
+a:hover {
+    color: #344247;
+    border: none;
+}
+#menu a {
+    display: block;
+    padding: 0 2em; 
+    /*background: url("images/navigation_s.png") no-repeat scroll right top transparent;*/
+    float: left;
+    padding-left: 9px;
+    border: none;
+    background: url("images/tab-left.png") no-repeat scroll left top transparent;
+    height: 29px;
+    color: #cccccc;
+}
+#menu a span {
+    background: url("images/tab-right.png") no-repeat scroll right top transparent;
+    height: 29px;
+    padding-right: 10px;
+    float: none;
+    display: block;
+}
+#menu a span span {
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    height: auto;
+    padding: 4px 4px 0;
+}
+#menu a.here, #menu a.here:hover {
+    color: #000;
+    background-position: 0 -58px;
+}
+#menu a.here span, #menu a.here:hover span{
+    background-position: 100% -58px;
+}
+#menu a:hover {
+    color: #ffffff;
+    background-position: 0 -29px;
+}
+#menu a:hover span {
+    background-position: 100% -29px;
+}
+#menu li ul {
+    position: absolute;
+    background: url("images/macbg.gif") repeat-x top left;
+    left: 0;
+    top: 25px; 
+    width: 150%;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    padding: 2% 0;
+    width: 200px;
+    display:none;
+}
+#menu li ul ul {
+    position: absolute;
+    background: url("images/macbg.gif") repeat-x top left;
+    left: 190px;
+    top: 0; 
+    width: 150%;
+    border: 1px solid #cccccc;
+    padding: 2% 0;
+    width: 200px;
+    display:none;
+}
+#menu li:hover > ul, #menu li li:hover > ul {
+    z-index: 999;
+    display: block;
+}
+#menu li ul a, #menu li ul a span {
+    color: #000;
+    background: none;
+    width: 180px;
+    padding-right: 10px;
+}
+#menu li ul a:hover {
+    background: url("images/lime.png") repeat scroll center center;
+}
+#menu li ul a:hover span {
+    color: white;
+}
+#main, #other {
+    margin: 2% 0;
+}
+#main h2, #other h2 {
+    background: url("images/side-box-top.png") no-repeat top left transparent;
+}
+.macbg {
+    background: url("images/macbg.gif") repeat-x top left;
+}
+#main {
+    padding: 2%;
+    float: left;
+    width: 70%;
+    margin-bottom: 50px;
+}
+.smallcontent {
+    float: left;
+    width: 45%;
+    margin-bottom: 3%;
+    padding: 1%;
+}
+#other {
+    float: right; 
+    width: 25%;
+    margin-left: 2%;
+}
+#footer {
+    background: #000 url("images/footer_bg.gif") repeat-x scroll top left;
+    color: #ccc;
+    clear: both;
+    z-index: 2;
+    margin-bottom: 30px;
+    line-height: 2.2em;
+}
+#footer p{
+    margin-left: 3%;
+}
+div.flash {
+    position: absolute;
+    float: right;
+    padding: 10px;
+    top: 0px;
+    right: 0px;
+    opacity: 0.75;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    clear: both;
+    color: #fff;
+    font-size: 11pt;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: black;
+    border: 2px solid #fff; 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    z-index: 2;
+}
+div.error {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border: 1px solid #666;
+}

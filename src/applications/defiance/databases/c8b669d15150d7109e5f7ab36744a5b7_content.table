@@ -1,0 +1,22 @@
+(dp1
+S'description'
+p2
+S'TEXT'
+p3
+sS'ident'
+p4
+S'CHAR(512)'
+p5
+sS'id'
+p6
+S'INTEGER PRIMARY KEY AUTOINCREMENT'
+p7
+sS'seq'
+p8
+S'INTEGER'
+p9
+sS'name'
+p10
+S'CHAR(512)'
+p11
+s.

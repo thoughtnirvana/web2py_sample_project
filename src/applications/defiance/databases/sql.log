@@ -1,0 +1,16 @@
+timestamp: 2010-04-06T23:20:44.360625
+CREATE TABLE services(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name CHAR(512),
+    description TEXT
+);
+success!
+timestamp: 2010-04-06T23:20:44.388625
+CREATE TABLE content(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    ident CHAR(512),
+    name CHAR(512),
+    seq INTEGER,
+    description TEXT
+);
+success!

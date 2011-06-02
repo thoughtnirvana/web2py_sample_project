@@ -1,0 +1,6 @@
+<div id="main" class="rounded macbg">
+    {{for row in rows:}}
+        {{=H3(XML(T(row.name)), _class="pad i18n")}}
+        {{=P(XML(T(row.description)), _class="para i18n")}}
+    {{pass}}
+</div>

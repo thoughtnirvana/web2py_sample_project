@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>{{=T(response.title or request.application)}}</title>
+        {{response.files.append(URL(request.application,'static','reset.css'))}}
+        {{response.files.append(URL(request.application,'static','layout.css'))}}
+        {{response.files.append(URL(request.application,'static','jquerycurvycorners/jquery.curvycorners.packed.js'))}}
+        {{response.files.append(URL(request.application,'static','tmpl.js'))}}
+        {{include 'web2py_ajax.html'}}
+    </head>
+    <body>
+        <div class="forBg">
+            <!-- container contains the contents and takes only a portion of available
+            display area. For fluid layout and centering the content.
+            -->
+            <div id="container">
+                <h3 id="top_comment" class="i18n">{{=XML(T(response.subtitle)) or ''}}</h3>
+                <div id="masthead"">
+                    <h1 id="logo" class="i18n">
+                        {{=A(T(response.title or request.application), _href="/")}}
+                    </h1>
+                </div>
+                {{if response.menu:}}
+                <div id="menu_wrap">
+                    <ul id="menu">
+                        {{createMenu(response.menu)}}
+                    </ul>
+                </div>
+                <div id="content">
+                    {{include}}
+                </div>
+            </div>
+            <div class="flash i18n">{{=XML(T(response.flash)) or ''}}</div>
+            <div id="footer">
+                <p class="i18n">
+                    {{=T('Copyright')}} &copy; 2010
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
+

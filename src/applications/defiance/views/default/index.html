@@ -1,0 +1,13 @@
+{{extend 'tmpl.html'}}
+
+<script>
+    {{if request.vars.target:}}
+        $(".here").removeClass("here");
+        $("a[href={{=request.vars.target}}]").addClass("here");
+    {{pass}}
+    query = '' + encodeURIComponent('ajax') + '=' + encodeURIComponent(1);
+    $.ajax({type: "POST", url: $('a.here').attr('href'), data: query, success: function(msg) { 
+            document.getElementById('content').innerHTML=msg; init(); }
+    });  
+</script>
+

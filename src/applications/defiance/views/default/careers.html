@@ -1,0 +1,15 @@
+<div id="main" class="rounded macbg">
+    <h3 class="i18n pad">{{=T('Being defiant :')}}</h3>
+    <p class="para i18n">
+        {{=XML(T('At <a href="/">defiance</a>, people are the highest valued assets. We take great pride and pleasure in what we are and what we do.'))}} 
+    </p>
+    <h3 class="pad i18n">{{=XML(T('The Zen of working at <a href="/">defiance</a> :'))}}</h3>
+        {{for row in rows:}}
+            {{=P(XML(T(row.description)), _class="i18n para")}} 
+        {{pass}}
+        <h3 class="i18n pad">{{=T('Applying for a position :')}}</h3>
+    <p class="para i18n">
+        {{=XML(T('Sounds interesting? We are hiring for a number of open-ended development positions. Drop us a mail at <a href="mailto:jobs@defiance.in">jobs@defiance.in</a>'))}}
+    </p>
+</div>
+

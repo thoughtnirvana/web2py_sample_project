@@ -1,0 +1,12 @@
+{{
+count = 0
+for row in rows:
+    style = (count % 2)  and 'float: right;' or 'float: left;'
+    count += 1
+}}
+    <div style="{{=style}}" class="macbg rounded smallcontent">
+        {{=H3(XML(T(row.name)), _class="pad i18n")}}
+        {{=P(XML(T(row.description)), _class="para i18n")}}
+    </div>
+{{pass}}
+
